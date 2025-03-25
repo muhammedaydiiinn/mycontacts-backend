@@ -13,6 +13,7 @@ app.use(express.urlencoded({extended: true}));
 
 // Router tanımlamaları yapıldı.
 app.use('/api/contacts', require('./routes/contactRoute'));
+app.use('/api/users', require('./routes/userRoute'));
 
 // Error handler middleware'i en sona eklenmelidir.
 app.use(errorHandler);
