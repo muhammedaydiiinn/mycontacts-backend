@@ -9,6 +9,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 // Router tanımlamaları yapıldı.
 app.use('/api/contacts', require('./routes/contactRoute'));
